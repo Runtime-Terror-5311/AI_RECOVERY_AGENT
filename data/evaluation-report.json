@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-09-01T12:06:39.814273+00:00",
+  "benchmark_sha256": "b48c8bdafffd",
+  "summary": {
+    "total_transactions": 150,
+    "recoverable_transactions": 71,
+    "total_amount_at_risk": 290000.0,
+    "gross_amount_recovered": 197300.0,
+    "gross_recovery_rate": 68.03448275862068,
+    "net_recovered_inr": 196043.5,
+    "total_action_costs": 1256.5,
+    "false_retry_count": 0,
+    "macro_f1": 0.9801098143300212,
+    "selective_accuracy": 98.63013698630137,
+    "abstained_count": 4,
+    "compliance_vetoes": 32,
+    "circuit_breaker_trips": 44,
+    "net_lift_over_naive": 23188.5,
+    "net_lift_over_rule": 3519.5
+  },
+  "policy_benchmarks": [
+    {
+      "policy_name": "Policy A: Control (No Action)",
+      "description": "Zero automated interventions (passive control)",
+      "gross_recovered": 0.0,
+      "action_cost": 0.0,
+      "false_retries": 0,
+      "false_retry_cost": 0.0,
+      "net_recovered": 0.0,
+      "compliance_vetoes": 0,
+      "recovery_rate": 0.0
+    },
+    {
+      "policy_name": "Policy B: Naive Blind Retries",
+      "description": "Retries all failures 2x blindly without diagnosis or safety checks",
+      "gross_recovered": 174000.0,
+      "action_cost": 750.0,
+      "false_retries": 158,
+      "false_retry_cost": 395.0,
+      "net_recovered": 172855.0,
+      "compliance_vetoes": 0,
+      "recovery_rate": 60.0
+    },
+    {
+      "policy_name": "Policy C: Deterministic Rule Policy",
+      "description": "Static cause-to-action routing without dynamic ENV delay optimization",
+      "gross_recovered": 193700.0,
+      "action_cost": 1173.5,
+      "false_retries": 1,
+      "false_retry_cost": 2.5,
+      "net_recovered": 192524.0,
+      "compliance_vetoes": 32,
+      "recovery_rate": 66.79310344827586
+    },
+    {
+      "policy_name": "Policy D: AI Constrained ENV Agent",
+      "description": "Model A Diagnosis + Model B Recoverability + ENV Optimization + Deterministic Safety Policy",
+      "gross_recovered": 197300.0,
+      "action_cost": 1256.5,
+      "false_retries": 0,
+      "false_retry_cost": 0.0,
+      "net_recovered": 196043.5,
+      "compliance_vetoes": 32,
+      "recovery_rate": 68.03448275862068
+    }
+  ],
+  "slices": {
+    "by_merchant_health": {
+      "Healthy Merchant": {
+        "total_tx": 106,
+        "risk_amount": 425800.0,
+        "net_recovered": 196043.5
+      },
+      "Degraded Merchant (>40% Failures)": {
+        "total_tx": 44,
+        "risk_amount": 195200.0,
+        "net_recovered": 0.0
+      }
+    },
+    "by_payment_method": {
+      "UPI": {
+        "total_tx": 41,
+        "risk_amount": 157000.0,
+        "net_recovered": 37000.0
+      },
+      "NETBANKING": {
+        "total_tx": 21,
+        "risk_amount": 95800.0,
+        "net_recovered": 24785.0
+      },
+      "EMANDATE": {
+        "total_tx": 25,
+        "risk_amount": 95500.0,
+        "net_recovered": 42372.0
+      },
+      "CARD": {
+        "total_tx": 63,
+        "risk_amount": 272700.0,
+        "net_recovered": 91886.5
+      }
+    },
+    "by_amount_bucket": {
+      "Low (<\u20b92,000)": {
+        "total_tx": 32,
+        "risk_amount": 35900.0,
+        "net_recovered": 17714.0
+      },
+      "High (>\u20b95,000)": {
+        "total_tx": 58,
+        "risk_amount": 372200.0,
+        "net_recovered": 115973.5
+      },
+      "Mid (\u20b92,000-\u20b95,000)": {
+        "total_tx": 60,
+        "risk_amount": 212900.0,
+        "net_recovered": 62356.0
+      }
+    }
+  },
+  "bucket_metrics": {
+    "gateway_timeout": {
+      "precision": 0.9375,
+      "recall": 1.0,
+      "f1": 0.967741935483871,
+      "tp": 15,
+      "fp": 1,
+      "fn": 0
+    },
+    "network_error": {
+      "precision": 1.0,
+      "recall": 0.9583333333333334,
+      "f1": 0.9787234042553191,
+      "tp": 23,
+      "fp": 0,
+      "fn": 1
+    },
+    "issuer_decline": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 17,
+      "fp": 0,
+      "fn": 0
+    },
+    "insufficient_funds": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 15,
+      "fp": 0,
+      "fn": 0
+    },
+    "expired_card": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 21,
+      "fp": 0,
+      "fn": 0
+    },
+    "risk_block": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561,
+      "tp": 20,
+      "fp": 1,
+      "fn": 0
+    },
+    "invalid_credentials": {
+      "precision": 0.9444444444444444,
+      "recall": 0.9444444444444444,
+      "f1": 0.9444444444444444,
+      "tp": 17,
+      "fp": 1,
+      "fn": 1
+    },
+    "unknown": {
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1": 0.9743589743589743,
+      "tp": 19,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "confusion_matrix": {
+    "gateway_timeout": {
+      "gateway_timeout": 15,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 0,
+      "invalid_credentials": 0,
+      "unknown": 0
+    },
+    "network_error": {
+      "gateway_timeout": 0,
+      "network_error": 23,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 0,
+      "invalid_credentials": 1,
+      "unknown": 0
+    },
+    "issuer_decline": {
+      "gateway_timeout": 0,
+      "network_error": 0,
+      "issuer_decline": 17,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 0,
+      "invalid_credentials": 0,
+      "unknown": 0
+    },
+    "insufficient_funds": {
+      "gateway_timeout": 0,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 15,
+      "expired_card": 0,
+      "risk_block": 0,
+      "invalid_credentials": 0,
+      "unknown": 0
+    },
+    "expired_card": {
+      "gateway_timeout": 0,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 21,
+      "risk_block": 0,
+      "invalid_credentials": 0,
+      "unknown": 0
+    },
+    "risk_block": {
+      "gateway_timeout": 0,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 20,
+      "invalid_credentials": 0,
+      "unknown": 0
+    },
+    "invalid_credentials": {
+      "gateway_timeout": 0,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 1,
+      "invalid_credentials": 17,
+      "unknown": 0
+    },
+    "unknown": {
+      "gateway_timeout": 1,
+      "network_error": 0,
+      "issuer_decline": 0,
+      "insufficient_funds": 0,
+      "expired_card": 0,
+      "risk_block": 0,
+      "invalid_credentials": 0,
+      "unknown": 19
+    }
+  }
+}

@@ -1,0 +1,5702 @@
+[
+  {
+    "event_id": "evt_00001_43253",
+    "transaction_id": "txn_bench_00001",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SOCKET_CLOSED Socket closed abruptly while transmitting ISO payload upi",
+    "gateway_response_code": "SOCKET_CLOSED",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "upi",
+    "amount": 1600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T07:45:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00002_88013",
+    "transaction_id": "txn_bench_00002",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "MPIN_MISMATCH System clearing error code 757 returned by switch upi",
+    "gateway_response_code": "MPIN_MISMATCH",
+    "gateway_message": "System clearing error code 757 returned by switch",
+    "payment_method": "upi",
+    "amount": 6800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:47:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00003_75733",
+    "transaction_id": "txn_bench_00003",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "SYS_MALFUNCTION_96 Unexpected error occurred during bank session initialization netbanking",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "netbanking",
+    "amount": 1100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:48:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00004_29341",
+    "transaction_id": "txn_bench_00004",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "FRAUD_SUSPECTED Device fingerprint associated with known chargeback cluster upi",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "Device fingerprint associated with known chargeback cluster",
+    "payment_method": "upi",
+    "amount": 7400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:50:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00005_17515",
+    "transaction_id": "txn_bench_00005",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "LIMIT_EXCEEDED Debit failed due to lack of funds in customer account upi",
+    "gateway_response_code": "LIMIT_EXCEEDED",
+    "gateway_message": "Debit failed due to lack of funds in customer account",
+    "payment_method": "upi",
+    "amount": 800.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T07:51:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00006_20286",
+    "transaction_id": "txn_bench_00006",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "INVALID_EXPIRY Tokenized card credentials expired on payment network emandate",
+    "gateway_response_code": "INVALID_EXPIRY",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "emandate",
+    "amount": 6300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:53:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00007_50167",
+    "transaction_id": "txn_bench_00007",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ECONNRESET Socket closed abruptly while transmitting ISO payload upi",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "upi",
+    "amount": 5500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:54:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00008_55341",
+    "transaction_id": "txn_bench_00008",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "UNKNOWN_ERROR Unmapped gateway payload returned: status unknown upi",
+    "gateway_response_code": "UNKNOWN_ERROR",
+    "gateway_message": "Unmapped gateway payload returned: status unknown",
+    "payment_method": "upi",
+    "amount": 3200.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T07:56:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00009_55966",
+    "transaction_id": "txn_bench_00009",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "DO_NOT_HONOR Issuer policy decline; transaction limit exceeded for customer emandate",
+    "gateway_response_code": "DO_NOT_HONOR",
+    "gateway_message": "Issuer policy decline; transaction limit exceeded for customer",
+    "payment_method": "emandate",
+    "amount": 3400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T07:57:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00010_42064",
+    "transaction_id": "txn_bench_00010",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "EXPIRY_PAST Billing card expired; update payment method details emandate",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "emandate",
+    "amount": 900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T07:59:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00011_39295",
+    "transaction_id": "txn_bench_00011",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "HTTP_504 3DS authentication timed out at ACS server card",
+    "gateway_response_code": "HTTP_504",
+    "gateway_message": "3DS authentication timed out at ACS server",
+    "payment_method": "card",
+    "amount": 6900.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:00:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00012_97742",
+    "transaction_id": "txn_bench_00012",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "NETWORK_ERR ECONNRESET from bank payment switch upi",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "ECONNRESET from bank payment switch",
+    "payment_method": "upi",
+    "amount": 3100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:02:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00013_25663",
+    "transaction_id": "txn_bench_00013",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "CARD_EXPIRED Card expiration date on file has elapsed emandate",
+    "gateway_response_code": "CARD_EXPIRED",
+    "gateway_message": "Card expiration date on file has elapsed",
+    "payment_method": "emandate",
+    "amount": 5800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:03:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00014_57137",
+    "transaction_id": "txn_bench_00014",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "SSL_HANDSHAKE_FAIL Broken pipe error communicating with payment service card",
+    "gateway_response_code": "SSL_HANDSHAKE_FAIL",
+    "gateway_message": "Broken pipe error communicating with payment service",
+    "payment_method": "card",
+    "amount": 7600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:05:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00015_78085",
+    "transaction_id": "txn_bench_00015",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "UNMAPPED_STATUS Unexpected error occurred during bank session initialization upi",
+    "gateway_response_code": "UNMAPPED_STATUS",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "upi",
+    "amount": 2300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:06:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00016_67598",
+    "transaction_id": "txn_bench_00016",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "BLACKLIST_MATCH Transaction blocked by risk engine: fraud score 89/100 card",
+    "gateway_response_code": "BLACKLIST_MATCH",
+    "gateway_message": "Transaction blocked by risk engine: fraud score 89/100",
+    "payment_method": "card",
+    "amount": 3600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:08:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00017_49994",
+    "transaction_id": "txn_bench_00017",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "DO_NOT_HONOR Bank declined debit request (soft decline; retry allowed later) card",
+    "gateway_response_code": "DO_NOT_HONOR",
+    "gateway_message": "Bank declined debit request (soft decline; retry allowed later)",
+    "payment_method": "card",
+    "amount": 600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:09:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00018_94074",
+    "transaction_id": "txn_bench_00018",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "CVV_ERR CVV security code validation mismatch with card network [Notice: Transaction blocked by risk engine: fraud score 89/100] upi",
+    "gateway_response_code": "CVV_ERR",
+    "gateway_message": "CVV security code validation mismatch with card network [Notice: Transaction blocked by risk engine: fraud score 89/100]",
+    "payment_method": "upi",
+    "amount": 4100.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:11:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00019_41896",
+    "transaction_id": "txn_bench_00019",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "INSUFFICIENT_FUNDS_51 VPA balance insufficient for mandated mandate debit upi",
+    "gateway_response_code": "INSUFFICIENT_FUNDS_51",
+    "gateway_message": "VPA balance insufficient for mandated mandate debit",
+    "payment_method": "upi",
+    "amount": 3000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:12:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00020_46697",
+    "transaction_id": "txn_bench_00020",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "TIMED_OUT Upstream bank API timed out during transaction auth [Notice: Generic system error code 99 from intermediate switch] upi",
+    "gateway_response_code": "TIMED_OUT",
+    "gateway_message": "Upstream bank API timed out during transaction auth [Notice: Generic system error code 99 from intermediate switch]",
+    "payment_method": "upi",
+    "amount": 6900.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:14:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00021_26936",
+    "transaction_id": "txn_bench_00021",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "SYS_MALFUNCTION_96 Acquirer response code 96: system malfunction card",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Acquirer response code 96: system malfunction",
+    "payment_method": "card",
+    "amount": 4600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:15:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00022_36132",
+    "transaction_id": "txn_bench_00022",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "NSF Account balance NSF; cannot clear transaction upi",
+    "gateway_response_code": "NSF",
+    "gateway_message": "Account balance NSF; cannot clear transaction",
+    "payment_method": "upi",
+    "amount": 1200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:17:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00023_29019",
+    "transaction_id": "txn_bench_00023",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ECONNRESET Broken pipe error communicating with payment service upi",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "Broken pipe error communicating with payment service",
+    "payment_method": "upi",
+    "amount": 4300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:18:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00024_67576",
+    "transaction_id": "txn_bench_00024",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "GATEWAY_TIMEOUT Transaction pending timeout: no response from acquirer card",
+    "gateway_response_code": "GATEWAY_TIMEOUT",
+    "gateway_message": "Transaction pending timeout: no response from acquirer",
+    "payment_method": "card",
+    "amount": 2900.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:20:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00025_62137",
+    "transaction_id": "txn_bench_00025",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "SOFT_DECLINE Bank declined debit request (soft decline; retry allowed later) card",
+    "gateway_response_code": "SOFT_DECLINE",
+    "gateway_message": "Bank declined debit request (soft decline; retry allowed later)",
+    "payment_method": "card",
+    "amount": 1700.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:21:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00026_98222",
+    "transaction_id": "txn_bench_00026",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "HTTP_504 3DS authentication timed out at ACS server upi",
+    "gateway_response_code": "HTTP_504",
+    "gateway_message": "3DS authentication timed out at ACS server",
+    "payment_method": "upi",
+    "amount": 5400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:23:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00027_49788",
+    "transaction_id": "txn_bench_00027",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "FRAUD_SUSPECTED System clearing error code 786 returned by switch card",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "System clearing error code 786 returned by switch",
+    "payment_method": "card",
+    "amount": 3900.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:24:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00028_12810",
+    "transaction_id": "txn_bench_00028",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "RISK_SHIELD Transaction blocked by risk engine: fraud score 89/100 upi",
+    "gateway_response_code": "RISK_SHIELD",
+    "gateway_message": "Transaction blocked by risk engine: fraud score 89/100",
+    "payment_method": "upi",
+    "amount": 500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:26:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00029_17666",
+    "transaction_id": "txn_bench_00029",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "EXPIRY_PAST Card expiration date on file has elapsed emandate",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Card expiration date on file has elapsed",
+    "payment_method": "emandate",
+    "amount": 2800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:27:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00030_63131",
+    "transaction_id": "txn_bench_00030",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "NETWORK_ERR TCP connection reset by peer during handshake card",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "TCP connection reset by peer during handshake",
+    "payment_method": "card",
+    "amount": 3200.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:29:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00031_65456",
+    "transaction_id": "txn_bench_00031",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "EXPIRED_CARD_54 Tokenized card credentials expired on payment network card",
+    "gateway_response_code": "EXPIRED_CARD_54",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "card",
+    "amount": 500.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:30:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00032_67838",
+    "transaction_id": "txn_bench_00032",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "GENERIC_ERR_99 Generic system error code 99 from intermediate switch [Notice: ISO8583 field 39 value 68: response timeout from switch] card",
+    "gateway_response_code": "GENERIC_ERR_99",
+    "gateway_message": "Generic system error code 99 from intermediate switch [Notice: ISO8583 field 39 value 68: response timeout from switch]",
+    "payment_method": "card",
+    "amount": 2100.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:32:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00033_22094",
+    "transaction_id": "txn_bench_00033",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "SOFT_DECLINE Card issuer blocked transaction due to daily velocity rule emandate",
+    "gateway_response_code": "SOFT_DECLINE",
+    "gateway_message": "Card issuer blocked transaction due to daily velocity rule",
+    "payment_method": "emandate",
+    "amount": 2600.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:33:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00034_74016",
+    "transaction_id": "txn_bench_00034",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "AUTH_FAIL_OTP Authentication failed: incorrect 3DS OTP entered by user netbanking",
+    "gateway_response_code": "AUTH_FAIL_OTP",
+    "gateway_message": "Authentication failed: incorrect 3DS OTP entered by user",
+    "payment_method": "netbanking",
+    "amount": 1000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:35:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00035_41597",
+    "transaction_id": "txn_bench_00035",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "EXPIRED_CARD_54 Tokenized card credentials expired on payment network emandate",
+    "gateway_response_code": "EXPIRED_CARD_54",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "emandate",
+    "amount": 6700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:36:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00036_75135",
+    "transaction_id": "txn_bench_00036",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Network transport failure connecting to acquirer endpoint card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Network transport failure connecting to acquirer endpoint",
+    "payment_method": "card",
+    "amount": 5700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:38:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00037_67857",
+    "transaction_id": "txn_bench_00037",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "INSUFFICIENT_FUNDS_51 ISO8583 decline code 51: Insufficient funds in account emandate",
+    "gateway_response_code": "INSUFFICIENT_FUNDS_51",
+    "gateway_message": "ISO8583 decline code 51: Insufficient funds in account",
+    "payment_method": "emandate",
+    "amount": 800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:39:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.62,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00038_34134",
+    "transaction_id": "txn_bench_00038",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "EXPIRY_PAST Billing card expired; update payment method details emandate",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "emandate",
+    "amount": 1100.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:41:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00039_60136",
+    "transaction_id": "txn_bench_00039",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "MPIN_MISMATCH Customer authentication challenge rejected by bank ACS upi",
+    "gateway_response_code": "MPIN_MISMATCH",
+    "gateway_message": "Customer authentication challenge rejected by bank ACS",
+    "payment_method": "upi",
+    "amount": 1800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:42:53.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00040_20119",
+    "transaction_id": "txn_bench_00040",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "FRAUD_SUSPECTED Transaction blocked by risk engine: fraud score 89/100 card",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "Transaction blocked by risk engine: fraud score 89/100",
+    "payment_method": "card",
+    "amount": 1900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:44:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00041_68889",
+    "transaction_id": "txn_bench_00041",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "NETWORK_ERR Socket closed abruptly while transmitting ISO payload card",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "card",
+    "amount": 4500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:45:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00042_93420",
+    "transaction_id": "txn_bench_00042",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "RESP_TIMEOUT_68 Transaction pending timeout: no response from acquirer netbanking",
+    "gateway_response_code": "RESP_TIMEOUT_68",
+    "gateway_message": "Transaction pending timeout: no response from acquirer",
+    "payment_method": "netbanking",
+    "amount": 2500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:47:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00043_96398",
+    "transaction_id": "txn_bench_00043",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "BLACKLIST_MATCH Card VPA matches internal fraud blacklist watch-list [Notice: ISO8583 field 39 value 68: response timeout from switch] upi",
+    "gateway_response_code": "BLACKLIST_MATCH",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list [Notice: ISO8583 field 39 value 68: response timeout from switch]",
+    "payment_method": "upi",
+    "amount": 4200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:48:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00044_31473",
+    "transaction_id": "txn_bench_00044",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "DECLINE_57 ISO8583 decline code 05: Do Not Honor from card issuer card",
+    "gateway_response_code": "DECLINE_57",
+    "gateway_message": "ISO8583 decline code 05: Do Not Honor from card issuer",
+    "payment_method": "card",
+    "amount": 6700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:50:23.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00045_80399",
+    "transaction_id": "txn_bench_00045",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "UNKNOWN_ERROR Generic system error code 99 from intermediate switch card",
+    "gateway_response_code": "UNKNOWN_ERROR",
+    "gateway_message": "Generic system error code 99 from intermediate switch",
+    "payment_method": "card",
+    "amount": 4700.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T08:51:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00046_62482",
+    "transaction_id": "txn_bench_00046",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "CARD_EXPIRED Billing card expired; update payment method details card",
+    "gateway_response_code": "CARD_EXPIRED",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "card",
+    "amount": 1100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:53:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00047_63229",
+    "transaction_id": "txn_bench_00047",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "EXPIRED_CARD_54 Billing card expired; update payment method details emandate",
+    "gateway_response_code": "EXPIRED_CARD_54",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "emandate",
+    "amount": 4000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:54:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00048_29577",
+    "transaction_id": "txn_bench_00048",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "GATEWAY_TIMEOUT Transaction pending timeout: no response from acquirer upi",
+    "gateway_response_code": "GATEWAY_TIMEOUT",
+    "gateway_message": "Transaction pending timeout: no response from acquirer",
+    "payment_method": "upi",
+    "amount": 5900.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:56:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00049_50637",
+    "transaction_id": "txn_bench_00049",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "HTTP_504 3DS authentication timed out at ACS server card",
+    "gateway_response_code": "HTTP_504",
+    "gateway_message": "3DS authentication timed out at ACS server",
+    "payment_method": "card",
+    "amount": 5300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T08:57:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00050_12019",
+    "transaction_id": "txn_bench_00050",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "RISK_SHIELD Suspected velocity rule 14 triggered: anomalous IP location card",
+    "gateway_response_code": "RISK_SHIELD",
+    "gateway_message": "Suspected velocity rule 14 triggered: anomalous IP location",
+    "payment_method": "card",
+    "amount": 7100.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T08:59:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00051_20602",
+    "transaction_id": "txn_bench_00051",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "GENERIC_ERR_99 System clearing error code 394 returned by switch upi",
+    "gateway_response_code": "GENERIC_ERR_99",
+    "gateway_message": "System clearing error code 394 returned by switch",
+    "payment_method": "upi",
+    "amount": 5300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:00:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00052_92366",
+    "transaction_id": "txn_bench_00052",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "INVALID_PIN System clearing error code 182 returned by switch upi",
+    "gateway_response_code": "INVALID_PIN",
+    "gateway_message": "System clearing error code 182 returned by switch",
+    "payment_method": "upi",
+    "amount": 4600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:02:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00053_11695",
+    "transaction_id": "txn_bench_00053",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "DO_NOT_HONOR Card issuer blocked transaction due to daily velocity rule card",
+    "gateway_response_code": "DO_NOT_HONOR",
+    "gateway_message": "Card issuer blocked transaction due to daily velocity rule",
+    "payment_method": "card",
+    "amount": 7300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:03:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00054_78029",
+    "transaction_id": "txn_bench_00054",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "LIMIT_EXCEEDED Insufficient credit line on revolving card limit netbanking",
+    "gateway_response_code": "LIMIT_EXCEEDED",
+    "gateway_message": "Insufficient credit line on revolving card limit",
+    "payment_method": "netbanking",
+    "amount": 3200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:05:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00055_86097",
+    "transaction_id": "txn_bench_00055",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "LOW_BALANCE Available balance is lower than requested charge amount upi",
+    "gateway_response_code": "LOW_BALANCE",
+    "gateway_message": "Available balance is lower than requested charge amount",
+    "payment_method": "upi",
+    "amount": 4400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:06:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.62,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00056_52681",
+    "transaction_id": "txn_bench_00056",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Invalid static password / bad credential payload upi",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Invalid static password / bad credential payload",
+    "payment_method": "upi",
+    "amount": 7000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:08:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00057_33785",
+    "transaction_id": "txn_bench_00057",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "SSL_HANDSHAKE_FAIL ECONNRESET from bank payment switch upi",
+    "gateway_response_code": "SSL_HANDSHAKE_FAIL",
+    "gateway_message": "ECONNRESET from bank payment switch",
+    "payment_method": "upi",
+    "amount": 4400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:09:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00058_67392",
+    "transaction_id": "txn_bench_00058",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "INSUFFICIENT_FUNDS_51 Insufficient credit line on revolving card limit emandate",
+    "gateway_response_code": "INSUFFICIENT_FUNDS_51",
+    "gateway_message": "Insufficient credit line on revolving card limit",
+    "payment_method": "emandate",
+    "amount": 6800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:11:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.62,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00059_33078",
+    "transaction_id": "txn_bench_00059",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "CARD_RESTRICTED Card issuer blocked transaction due to daily velocity rule emandate",
+    "gateway_response_code": "CARD_RESTRICTED",
+    "gateway_message": "Card issuer blocked transaction due to daily velocity rule",
+    "payment_method": "emandate",
+    "amount": 1200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:12:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00060_31032",
+    "transaction_id": "txn_bench_00060",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "BAL_ERR Debit failed due to lack of funds in customer account netbanking",
+    "gateway_response_code": "BAL_ERR",
+    "gateway_message": "Debit failed due to lack of funds in customer account",
+    "payment_method": "netbanking",
+    "amount": 4300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:14:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.62,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00061_27727",
+    "transaction_id": "txn_bench_00061",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ACQUIRER_ERR_UNKNOWN Unexpected error occurred during bank session initialization card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "card",
+    "amount": 6900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:15:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00062_85821",
+    "transaction_id": "txn_bench_00062",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "BAL_ERR VPA balance insufficient for mandated mandate debit netbanking",
+    "gateway_response_code": "BAL_ERR",
+    "gateway_message": "VPA balance insufficient for mandated mandate debit",
+    "payment_method": "netbanking",
+    "amount": 3600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:17:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00063_81401",
+    "transaction_id": "txn_bench_00063",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "FRAUD_SUSPECTED Suspected velocity rule 14 triggered: anomalous IP location [Notice: Transaction blocked by risk engine: fraud score 89/100] upi",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "Suspected velocity rule 14 triggered: anomalous IP location [Notice: Transaction blocked by risk engine: fraud score 89/100]",
+    "payment_method": "upi",
+    "amount": 700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:18:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00064_63572",
+    "transaction_id": "txn_bench_00064",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "LIMIT_EXCEEDED VPA balance insufficient for mandated mandate debit upi",
+    "gateway_response_code": "LIMIT_EXCEEDED",
+    "gateway_message": "VPA balance insufficient for mandated mandate debit",
+    "payment_method": "upi",
+    "amount": 1300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:20:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00065_71848",
+    "transaction_id": "txn_bench_00065",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "DECLINE_57 Card issuer blocked transaction due to daily velocity rule emandate",
+    "gateway_response_code": "DECLINE_57",
+    "gateway_message": "Card issuer blocked transaction due to daily velocity rule",
+    "payment_method": "emandate",
+    "amount": 1600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:21:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00066_39787",
+    "transaction_id": "txn_bench_00066",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "FRAUD_SUSPECTED Automated fraud shield triggered by anomalous behavior card",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "Automated fraud shield triggered by anomalous behavior",
+    "payment_method": "card",
+    "amount": 4100.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:23:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00067_61828",
+    "transaction_id": "txn_bench_00067",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "CONN_RESET Network transport failure connecting to acquirer endpoint card",
+    "gateway_response_code": "CONN_RESET",
+    "gateway_message": "Network transport failure connecting to acquirer endpoint",
+    "payment_method": "card",
+    "amount": 3000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:24:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00068_51431",
+    "transaction_id": "txn_bench_00068",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "UNKNOWN_ERROR Temporary server error occurred upstream (ref: unk_837) netbanking",
+    "gateway_response_code": "UNKNOWN_ERROR",
+    "gateway_message": "Temporary server error occurred upstream (ref: unk_837)",
+    "payment_method": "netbanking",
+    "amount": 6500.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:26:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00069_66551",
+    "transaction_id": "txn_bench_00069",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SSL_HANDSHAKE_FAIL Socket closed abruptly while transmitting ISO payload card",
+    "gateway_response_code": "SSL_HANDSHAKE_FAIL",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "card",
+    "amount": 6400.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:27:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00070_71354",
+    "transaction_id": "txn_bench_00070",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "RISK_FRAUD Automated fraud shield triggered by anomalous behavior card",
+    "gateway_response_code": "RISK_FRAUD",
+    "gateway_message": "Automated fraud shield triggered by anomalous behavior",
+    "payment_method": "card",
+    "amount": 5000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:29:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00071_84489",
+    "transaction_id": "txn_bench_00071",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "EXPIRY_PAST Card expiration date on file has elapsed emandate",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Card expiration date on file has elapsed",
+    "payment_method": "emandate",
+    "amount": 1400.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:30:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00072_87786",
+    "transaction_id": "txn_bench_00072",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "LOW_BALANCE Available balance is lower than requested charge amount emandate",
+    "gateway_response_code": "LOW_BALANCE",
+    "gateway_message": "Available balance is lower than requested charge amount",
+    "payment_method": "emandate",
+    "amount": 6100.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:32:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00073_11780",
+    "transaction_id": "txn_bench_00073",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SOCKET_CLOSED TCP connection reset by peer during handshake card",
+    "gateway_response_code": "SOCKET_CLOSED",
+    "gateway_message": "TCP connection reset by peer during handshake",
+    "payment_method": "card",
+    "amount": 2700.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:33:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00074_40377",
+    "transaction_id": "txn_bench_00074",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "SLA_EXCEEDED ISO8583 field 39 value 68: response timeout from switch upi",
+    "gateway_response_code": "SLA_EXCEEDED",
+    "gateway_message": "ISO8583 field 39 value 68: response timeout from switch",
+    "payment_method": "upi",
+    "amount": 2000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:35:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00075_46089",
+    "transaction_id": "txn_bench_00075",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "RISK_FRAUD Suspected velocity rule 14 triggered: anomalous IP location card",
+    "gateway_response_code": "RISK_FRAUD",
+    "gateway_message": "Suspected velocity rule 14 triggered: anomalous IP location",
+    "payment_method": "card",
+    "amount": 1500.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:36:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00076_98420",
+    "transaction_id": "txn_bench_00076",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "UNMAPPED_STATUS Unexpected error occurred during bank session initialization netbanking",
+    "gateway_response_code": "UNMAPPED_STATUS",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "netbanking",
+    "amount": 5300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:38:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00077_71237",
+    "transaction_id": "txn_bench_00077",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "SYS_MALFUNCTION_96 Acquirer response code 96: system malfunction card",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Acquirer response code 96: system malfunction",
+    "payment_method": "card",
+    "amount": 5300.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:39:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00078_18488",
+    "transaction_id": "txn_bench_00078",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "INVALID_PIN Customer authentication challenge rejected by bank ACS card",
+    "gateway_response_code": "INVALID_PIN",
+    "gateway_message": "Customer authentication challenge rejected by bank ACS",
+    "payment_method": "card",
+    "amount": 5500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:41:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00079_83358",
+    "transaction_id": "txn_bench_00079",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "INVALID_EXPIRY Billing card expired; update payment method details emandate",
+    "gateway_response_code": "INVALID_EXPIRY",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "emandate",
+    "amount": 4100.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:42:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00080_89736",
+    "transaction_id": "txn_bench_00080",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "BAD_OTP UPI MPIN verification failure: maximum attempts exceeded netbanking",
+    "gateway_response_code": "BAD_OTP",
+    "gateway_message": "UPI MPIN verification failure: maximum attempts exceeded",
+    "payment_method": "netbanking",
+    "amount": 7900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:44:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00081_94449",
+    "transaction_id": "txn_bench_00081",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "BAD_OTP Two-factor authorization code mismatch (err_auth_82) card",
+    "gateway_response_code": "BAD_OTP",
+    "gateway_message": "Two-factor authorization code mismatch (err_auth_82)",
+    "payment_method": "card",
+    "amount": 5000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:45:53.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00082_23656",
+    "transaction_id": "txn_bench_00082",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "ISSUER_DECLINE_05 Card issuer blocked transaction due to daily velocity rule emandate",
+    "gateway_response_code": "ISSUER_DECLINE_05",
+    "gateway_message": "Card issuer blocked transaction due to daily velocity rule",
+    "payment_method": "emandate",
+    "amount": 5700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:47:23.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00083_77950",
+    "transaction_id": "txn_bench_00083",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "SYS_MALFUNCTION_96 Unexpected error occurred during bank session initialization upi",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "upi",
+    "amount": 6100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:48:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00084_16161",
+    "transaction_id": "txn_bench_00084",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "NSF Account balance NSF; cannot clear transaction netbanking",
+    "gateway_response_code": "NSF",
+    "gateway_message": "Account balance NSF; cannot clear transaction",
+    "payment_method": "netbanking",
+    "amount": 5200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:50:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00085_66574",
+    "transaction_id": "txn_bench_00085",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "NSF ISO8583 decline code 51: Insufficient funds in account netbanking",
+    "gateway_response_code": "NSF",
+    "gateway_message": "ISO8583 decline code 51: Insufficient funds in account",
+    "payment_method": "netbanking",
+    "amount": 7200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T09:51:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00086_78086",
+    "transaction_id": "txn_bench_00086",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ECONNRESET Socket closed abruptly while transmitting ISO payload upi",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "upi",
+    "amount": 500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:53:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00087_67020",
+    "transaction_id": "txn_bench_00087",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "SYS_MALFUNCTION_96 Unexpected error occurred during bank session initialization card",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "card",
+    "amount": 7300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:54:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00088_37342",
+    "transaction_id": "txn_bench_00088",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "UNMAPPED_STATUS Unmapped gateway payload returned: status unknown netbanking",
+    "gateway_response_code": "UNMAPPED_STATUS",
+    "gateway_message": "Unmapped gateway payload returned: status unknown",
+    "payment_method": "netbanking",
+    "amount": 1100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:56:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00089_62662",
+    "transaction_id": "txn_bench_00089",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Issuer policy decline; transaction limit exceeded for customer card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Issuer policy decline; transaction limit exceeded for customer",
+    "payment_method": "card",
+    "amount": 6400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T09:57:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00090_88446",
+    "transaction_id": "txn_bench_00090",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "AUTH_FAIL_OTP Authentication failed: incorrect 3DS OTP entered by user card",
+    "gateway_response_code": "AUTH_FAIL_OTP",
+    "gateway_message": "Authentication failed: incorrect 3DS OTP entered by user",
+    "payment_method": "card",
+    "amount": 2300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T09:59:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00091_22536",
+    "transaction_id": "txn_bench_00091",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "UNMAPPED_STATUS Unexpected error occurred during bank session initialization upi",
+    "gateway_response_code": "UNMAPPED_STATUS",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "upi",
+    "amount": 4000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:00:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00092_32658",
+    "transaction_id": "txn_bench_00092",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "INVALID_PIN Invalid static password / bad credential payload netbanking",
+    "gateway_response_code": "INVALID_PIN",
+    "gateway_message": "Invalid static password / bad credential payload",
+    "payment_method": "netbanking",
+    "amount": 3400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:02:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00093_79058",
+    "transaction_id": "txn_bench_00093",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "RESP_TIMEOUT_68 Upstream bank API timed out during transaction auth card",
+    "gateway_response_code": "RESP_TIMEOUT_68",
+    "gateway_message": "Upstream bank API timed out during transaction auth",
+    "payment_method": "card",
+    "amount": 6000.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:03:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00094_99318",
+    "transaction_id": "txn_bench_00094",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ECONNRESET ECONNRESET from bank payment switch card",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "ECONNRESET from bank payment switch",
+    "payment_method": "card",
+    "amount": 700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:05:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00095_87847",
+    "transaction_id": "txn_bench_00095",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "RESP_TIMEOUT_68 Upstream bank API timed out during transaction auth netbanking",
+    "gateway_response_code": "RESP_TIMEOUT_68",
+    "gateway_message": "Upstream bank API timed out during transaction auth",
+    "payment_method": "netbanking",
+    "amount": 7200.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:06:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00096_25466",
+    "transaction_id": "txn_bench_00096",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "BAD_OTP CVV security code validation mismatch with card network card",
+    "gateway_response_code": "BAD_OTP",
+    "gateway_message": "CVV security code validation mismatch with card network",
+    "payment_method": "card",
+    "amount": 2500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:08:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00097_60044",
+    "transaction_id": "txn_bench_00097",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "DO_NOT_HONOR ISO8583 decline code 05: Do Not Honor from card issuer card",
+    "gateway_response_code": "DO_NOT_HONOR",
+    "gateway_message": "ISO8583 decline code 05: Do Not Honor from card issuer",
+    "payment_method": "card",
+    "amount": 7600.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:09:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00098_53158",
+    "transaction_id": "txn_bench_00098",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "TIMED_OUT Latency spike in payment rail; connection closed by gateway card",
+    "gateway_response_code": "TIMED_OUT",
+    "gateway_message": "Latency spike in payment rail; connection closed by gateway",
+    "payment_method": "card",
+    "amount": 1100.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:11:23.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00099_96530",
+    "transaction_id": "txn_bench_00099",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ACQUIRER_ERR_UNKNOWN Network transport failure connecting to acquirer endpoint card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Network transport failure connecting to acquirer endpoint",
+    "payment_method": "card",
+    "amount": 7200.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:12:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00100_54252",
+    "transaction_id": "txn_bench_00100",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "GENERIC_ERR_99 Unexpected error occurred during bank session initialization upi",
+    "gateway_response_code": "GENERIC_ERR_99",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "upi",
+    "amount": 6500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:14:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00101_16075",
+    "transaction_id": "txn_bench_00101",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "SOCKET_CLOSED Broken pipe error communicating with payment service [Notice: ISO8583 field 39 value 68: response timeout from switch] card",
+    "gateway_response_code": "SOCKET_CLOSED",
+    "gateway_message": "Broken pipe error communicating with payment service [Notice: ISO8583 field 39 value 68: response timeout from switch]",
+    "payment_method": "card",
+    "amount": 5700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:15:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00102_33510",
+    "transaction_id": "txn_bench_00102",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SYS_MALFUNCTION_96 Generic system error code 99 from intermediate switch card",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Generic system error code 99 from intermediate switch",
+    "payment_method": "card",
+    "amount": 4300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:17:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00103_17139",
+    "transaction_id": "txn_bench_00103",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "CARD_RESTRICTED Bank declined debit request (soft decline; retry allowed later) card",
+    "gateway_response_code": "CARD_RESTRICTED",
+    "gateway_message": "Bank declined debit request (soft decline; retry allowed later)",
+    "payment_method": "card",
+    "amount": 1700.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:18:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00104_40132",
+    "transaction_id": "txn_bench_00104",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "LIMIT_EXCEEDED ISO8583 decline code 51: Insufficient funds in account emandate",
+    "gateway_response_code": "LIMIT_EXCEEDED",
+    "gateway_message": "ISO8583 decline code 51: Insufficient funds in account",
+    "payment_method": "emandate",
+    "amount": 2700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:20:23.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.62,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00105_61982",
+    "transaction_id": "txn_bench_00105",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "INVALID_EXPIRY Tokenized card credentials expired on payment network card",
+    "gateway_response_code": "INVALID_EXPIRY",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "card",
+    "amount": 4400.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:21:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00106_38124",
+    "transaction_id": "txn_bench_00106",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SSL_HANDSHAKE_FAIL Broken pipe error communicating with payment service card",
+    "gateway_response_code": "SSL_HANDSHAKE_FAIL",
+    "gateway_message": "Broken pipe error communicating with payment service",
+    "payment_method": "card",
+    "amount": 2400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:23:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00107_73548",
+    "transaction_id": "txn_bench_00107",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "CARD_RESTRICTED Bank declined debit request (soft decline; retry allowed later) emandate",
+    "gateway_response_code": "CARD_RESTRICTED",
+    "gateway_message": "Bank declined debit request (soft decline; retry allowed later)",
+    "payment_method": "emandate",
+    "amount": 3300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:24:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.68,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00108_73488",
+    "transaction_id": "txn_bench_00108",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "EXPIRY_PAST Card expiration date on file has elapsed emandate",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Card expiration date on file has elapsed",
+    "payment_method": "emandate",
+    "amount": 400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:26:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00109_51443",
+    "transaction_id": "txn_bench_00109",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "RESP_TIMEOUT_68 ISO8583 field 39 value 68: response timeout from switch upi",
+    "gateway_response_code": "RESP_TIMEOUT_68",
+    "gateway_message": "ISO8583 field 39 value 68: response timeout from switch",
+    "payment_method": "upi",
+    "amount": 5000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:27:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00110_15375",
+    "transaction_id": "txn_bench_00110",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "RISK_FRAUD Card VPA matches internal fraud blacklist watch-list upi",
+    "gateway_response_code": "RISK_FRAUD",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list",
+    "payment_method": "upi",
+    "amount": 3600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:29:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00111_57857",
+    "transaction_id": "txn_bench_00111",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "RESP_TIMEOUT_68 ISO8583 field 39 value 68: response timeout from switch card",
+    "gateway_response_code": "RESP_TIMEOUT_68",
+    "gateway_message": "ISO8583 field 39 value 68: response timeout from switch",
+    "payment_method": "card",
+    "amount": 5100.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:30:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00112_79173",
+    "transaction_id": "txn_bench_00112",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "BAD_OTP CVV security code validation mismatch with card network netbanking",
+    "gateway_response_code": "BAD_OTP",
+    "gateway_message": "CVV security code validation mismatch with card network",
+    "payment_method": "netbanking",
+    "amount": 5200.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:32:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00113_49237",
+    "transaction_id": "txn_bench_00113",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "ECONNRESET ECONNRESET from bank payment switch upi",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "ECONNRESET from bank payment switch",
+    "payment_method": "upi",
+    "amount": 3600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:33:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00114_25499",
+    "transaction_id": "txn_bench_00114",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "AUTH_FAIL_OTP Authentication failed: incorrect 3DS OTP entered by user upi",
+    "gateway_response_code": "AUTH_FAIL_OTP",
+    "gateway_message": "Authentication failed: incorrect 3DS OTP entered by user",
+    "payment_method": "upi",
+    "amount": 6000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:35:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00115_38858",
+    "transaction_id": "txn_bench_00115",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Card expiration date on file has elapsed card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Card expiration date on file has elapsed",
+    "payment_method": "card",
+    "amount": 4600.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:36:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00116_95451",
+    "transaction_id": "txn_bench_00116",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ISSUER_DECLINE_05 Issuer switch returned decline 57: transaction not permitted emandate",
+    "gateway_response_code": "ISSUER_DECLINE_05",
+    "gateway_message": "Issuer switch returned decline 57: transaction not permitted",
+    "payment_method": "emandate",
+    "amount": 7500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:38:23.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00117_38344",
+    "transaction_id": "txn_bench_00117",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "DECLINE_57 Issuer switch returned decline 57: transaction not permitted card",
+    "gateway_response_code": "DECLINE_57",
+    "gateway_message": "Issuer switch returned decline 57: transaction not permitted",
+    "payment_method": "card",
+    "amount": 3600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:39:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00118_19435",
+    "transaction_id": "txn_bench_00118",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "NETWORK_ERR ECONNRESET from bank payment switch card",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "ECONNRESET from bank payment switch",
+    "payment_method": "card",
+    "amount": 6200.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:41:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00119_17012",
+    "transaction_id": "txn_bench_00119",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "NETWORK_ERR System clearing error code 283 returned by switch upi",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "System clearing error code 283 returned by switch",
+    "payment_method": "upi",
+    "amount": 3600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:42:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00120_15428",
+    "transaction_id": "txn_bench_00120",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "EXPIRED_CARD_54 ISO8583 decline code 54: Expired card presented emandate",
+    "gateway_response_code": "EXPIRED_CARD_54",
+    "gateway_message": "ISO8583 decline code 54: Expired card presented",
+    "payment_method": "emandate",
+    "amount": 700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:44:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00121_92132",
+    "transaction_id": "txn_bench_00121",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Upstream bank API timed out during transaction auth netbanking",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Upstream bank API timed out during transaction auth",
+    "payment_method": "netbanking",
+    "amount": 5500.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:45:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00122_14142",
+    "transaction_id": "txn_bench_00122",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "SYS_MALFUNCTION_96 Unexpected error occurred during bank session initialization netbanking",
+    "gateway_response_code": "SYS_MALFUNCTION_96",
+    "gateway_message": "Unexpected error occurred during bank session initialization",
+    "payment_method": "netbanking",
+    "amount": 6300.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:47:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00123_37698",
+    "transaction_id": "txn_bench_00123",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "VELOCITY_BLOCK Card VPA matches internal fraud blacklist watch-list card",
+    "gateway_response_code": "VELOCITY_BLOCK",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list",
+    "payment_method": "card",
+    "amount": 6500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:48:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00124_68738",
+    "transaction_id": "txn_bench_00124",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "VELOCITY_BLOCK Transaction blocked by risk engine: fraud score 89/100 upi",
+    "gateway_response_code": "VELOCITY_BLOCK",
+    "gateway_message": "Transaction blocked by risk engine: fraud score 89/100",
+    "payment_method": "upi",
+    "amount": 3900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:50:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00125_92213",
+    "transaction_id": "txn_bench_00125",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "EXPIRED_CARD_54 ISO8583 decline code 54: Expired card presented card",
+    "gateway_response_code": "EXPIRED_CARD_54",
+    "gateway_message": "ISO8583 decline code 54: Expired card presented",
+    "payment_method": "card",
+    "amount": 7600.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:51:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00126_21176",
+    "transaction_id": "txn_bench_00126",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ACQUIRER_ERR_UNKNOWN Tokenized card credentials expired on payment network card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "card",
+    "amount": 3300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:53:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00127_65933",
+    "transaction_id": "txn_bench_00127",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "CVV_ERR Authentication failed: incorrect 3DS OTP entered by user upi",
+    "gateway_response_code": "CVV_ERR",
+    "gateway_message": "Authentication failed: incorrect 3DS OTP entered by user",
+    "payment_method": "upi",
+    "amount": 2000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:54:53.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00128_89307",
+    "transaction_id": "txn_bench_00128",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "ECONNRESET Socket closed abruptly while transmitting ISO payload upi",
+    "gateway_response_code": "ECONNRESET",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "upi",
+    "amount": 3700.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T10:56:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00129_79044",
+    "transaction_id": "txn_bench_00129",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "GENERIC_ERR_99 System clearing error code 424 returned by switch netbanking",
+    "gateway_response_code": "GENERIC_ERR_99",
+    "gateway_message": "System clearing error code 424 returned by switch",
+    "payment_method": "netbanking",
+    "amount": 2900.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T10:57:53.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00130_93277",
+    "transaction_id": "txn_bench_00130",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "CVV_ERR CVV security code validation mismatch with card network upi",
+    "gateway_response_code": "CVV_ERR",
+    "gateway_message": "CVV security code validation mismatch with card network",
+    "payment_method": "upi",
+    "amount": 2800.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T10:59:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00131_41073",
+    "transaction_id": "txn_bench_00131",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "BLACKLIST_MATCH Transaction blocked by risk engine: fraud score 89/100 card",
+    "gateway_response_code": "BLACKLIST_MATCH",
+    "gateway_message": "Transaction blocked by risk engine: fraud score 89/100",
+    "payment_method": "card",
+    "amount": 7800.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:00:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00132_61097",
+    "transaction_id": "txn_bench_00132",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "GENERIC_ERR_99 Acquirer response code 96: system malfunction card",
+    "gateway_response_code": "GENERIC_ERR_99",
+    "gateway_message": "Acquirer response code 96: system malfunction",
+    "payment_method": "card",
+    "amount": 2300.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:02:23.599071+00:00",
+    "true_cause": "unknown",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00133_77964",
+    "transaction_id": "txn_bench_00133",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN Insufficient credit line on revolving card limit netbanking",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Insufficient credit line on revolving card limit",
+    "payment_method": "netbanking",
+    "amount": 6300.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:03:53.599071+00:00",
+    "true_cause": "insufficient_funds",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.3,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00134_88807",
+    "transaction_id": "txn_bench_00134",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "BAD_OTP Authentication failed: incorrect 3DS OTP entered by user netbanking",
+    "gateway_response_code": "BAD_OTP",
+    "gateway_message": "Authentication failed: incorrect 3DS OTP entered by user",
+    "payment_method": "netbanking",
+    "amount": 6000.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:05:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00135_69499",
+    "transaction_id": "txn_bench_00135",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "SOFT_DECLINE Issuer switch returned decline 57: transaction not permitted emandate",
+    "gateway_response_code": "SOFT_DECLINE",
+    "gateway_message": "Issuer switch returned decline 57: transaction not permitted",
+    "payment_method": "emandate",
+    "amount": 5600.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:06:53.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00136_15104",
+    "transaction_id": "txn_bench_00136",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "CARD_EXPIRED Card expiration date on file has elapsed [Notice: ISO8583 field 39 value 68: response timeout from switch] emandate",
+    "gateway_response_code": "CARD_EXPIRED",
+    "gateway_message": "Card expiration date on file has elapsed [Notice: ISO8583 field 39 value 68: response timeout from switch]",
+    "payment_method": "emandate",
+    "amount": 7400.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:08:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 1
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00137_34948",
+    "transaction_id": "txn_bench_00137",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "SSL_HANDSHAKE_FAIL Network transport failure connecting to acquirer endpoint card",
+    "gateway_response_code": "SSL_HANDSHAKE_FAIL",
+    "gateway_message": "Network transport failure connecting to acquirer endpoint",
+    "payment_method": "card",
+    "amount": 1500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:09:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00138_88753",
+    "transaction_id": "txn_bench_00138",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "RISK_FRAUD Card VPA matches internal fraud blacklist watch-list card",
+    "gateway_response_code": "RISK_FRAUD",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list",
+    "payment_method": "card",
+    "amount": 7500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:11:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00139_80849",
+    "transaction_id": "txn_bench_00139",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "TIMED_OUT Transaction pending timeout: no response from acquirer card",
+    "gateway_response_code": "TIMED_OUT",
+    "gateway_message": "Transaction pending timeout: no response from acquirer",
+    "payment_method": "card",
+    "amount": 700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:12:53.599071+00:00",
+    "true_cause": "gateway_timeout",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.78,
+        "success": 1
+      },
+      "retry_delayed": {
+        "prob": 0.74,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00140_11188",
+    "transaction_id": "txn_bench_00140",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "BLACKLIST_MATCH Automated fraud shield triggered by anomalous behavior card",
+    "gateway_response_code": "BLACKLIST_MATCH",
+    "gateway_message": "Automated fraud shield triggered by anomalous behavior",
+    "payment_method": "card",
+    "amount": 3400.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:14:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00141_44044",
+    "transaction_id": "txn_bench_00141",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "FRAUD_SUSPECTED Card VPA matches internal fraud blacklist watch-list card",
+    "gateway_response_code": "FRAUD_SUSPECTED",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list",
+    "payment_method": "card",
+    "amount": 7500.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:15:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00142_43541",
+    "transaction_id": "txn_bench_00142",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "BLACKLIST_MATCH Card VPA matches internal fraud blacklist watch-list upi",
+    "gateway_response_code": "BLACKLIST_MATCH",
+    "gateway_message": "Card VPA matches internal fraud blacklist watch-list",
+    "payment_method": "upi",
+    "amount": 3000.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:17:23.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00143_66582",
+    "transaction_id": "txn_bench_00143",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "RISK_FRAUD Automated fraud shield triggered by anomalous behavior upi",
+    "gateway_response_code": "RISK_FRAUD",
+    "gateway_message": "Automated fraud shield triggered by anomalous behavior",
+    "payment_method": "upi",
+    "amount": 5000.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:18:53.599071+00:00",
+    "true_cause": "risk_block",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 1
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00144_85322",
+    "transaction_id": "txn_bench_00144",
+    "merchant_id": "merch_swiggy_delivery",
+    "merchant_healthy": true,
+    "text": "CARD_RESTRICTED Issuer switch returned decline 57: transaction not permitted card",
+    "gateway_response_code": "CARD_RESTRICTED",
+    "gateway_message": "Issuer switch returned decline 57: transaction not permitted",
+    "payment_method": "card",
+    "amount": 3800.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:20:23.599071+00:00",
+    "true_cause": "issuer_decline",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.35,
+        "success": 1
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00145_53189",
+    "transaction_id": "txn_bench_00145",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "INVALID_EXPIRY Tokenized card credentials expired on payment network card",
+    "gateway_response_code": "INVALID_EXPIRY",
+    "gateway_message": "Tokenized card credentials expired on payment network",
+    "payment_method": "card",
+    "amount": 5400.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:21:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00146_87528",
+    "transaction_id": "txn_bench_00146",
+    "merchant_id": "merch_zomato_food",
+    "merchant_healthy": true,
+    "text": "ACQUIRER_ERR_UNKNOWN TCP connection reset by peer during handshake card",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "TCP connection reset by peer during handshake",
+    "payment_method": "card",
+    "amount": 5800.0,
+    "attempt_number": 2,
+    "timestamp": "2026-09-01T11:23:23.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00147_76601",
+    "transaction_id": "txn_bench_00147",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "ACQUIRER_ERR_UNKNOWN Validity date invalid or in the past; renewal required emandate",
+    "gateway_response_code": "ACQUIRER_ERR_UNKNOWN",
+    "gateway_message": "Validity date invalid or in the past; renewal required",
+    "payment_method": "emandate",
+    "amount": 6600.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:24:53.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00148_96832",
+    "transaction_id": "txn_bench_00148",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "EXPIRY_PAST Billing card expired; update payment method details card",
+    "gateway_response_code": "EXPIRY_PAST",
+    "gateway_message": "Billing card expired; update payment method details",
+    "payment_method": "card",
+    "amount": 1700.0,
+    "attempt_number": 1,
+    "timestamp": "2026-09-01T11:26:23.599071+00:00",
+    "true_cause": "expired_card",
+    "was_recoverable": false,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00149_93135",
+    "transaction_id": "txn_bench_00149",
+    "merchant_id": "merch_flipkart_retail",
+    "merchant_healthy": true,
+    "text": "NETWORK_ERR Socket closed abruptly while transmitting ISO payload card",
+    "gateway_response_code": "NETWORK_ERR",
+    "gateway_message": "Socket closed abruptly while transmitting ISO payload",
+    "payment_method": "card",
+    "amount": 1500.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:27:53.599071+00:00",
+    "true_cause": "network_error",
+    "was_recoverable": true,
+    "is_noisy": false,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.25,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.45,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  },
+  {
+    "event_id": "evt_00150_40913",
+    "transaction_id": "txn_bench_00150",
+    "merchant_id": "merch_glitchy_electronics",
+    "merchant_healthy": false,
+    "text": "CVV_ERR Customer authentication challenge rejected by bank ACS [Notice: ISO8583 decline code 51: Insufficient funds in account] netbanking",
+    "gateway_response_code": "CVV_ERR",
+    "gateway_message": "Customer authentication challenge rejected by bank ACS [Notice: ISO8583 decline code 51: Insufficient funds in account]",
+    "payment_method": "netbanking",
+    "amount": 4100.0,
+    "attempt_number": 3,
+    "timestamp": "2026-09-01T11:29:23.599071+00:00",
+    "true_cause": "invalid_credentials",
+    "was_recoverable": false,
+    "is_noisy": true,
+    "action_outcomes": {
+      "retry_immediate": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "retry_delayed": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "send_update_card_link": {
+        "prob": 0.0,
+        "success": 0
+      },
+      "escalate_human": {
+        "prob": 0.15,
+        "success": 0
+      },
+      "no_action": {
+        "prob": 0.0,
+        "success": 0
+      }
+    }
+  }
+]

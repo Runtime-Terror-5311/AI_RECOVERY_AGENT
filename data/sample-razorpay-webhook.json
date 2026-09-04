@@ -1,0 +1,49 @@
+{
+  "entity": "event",
+  "account_id": "acc_EFgh1234567890",
+  "event": "payment.failed",
+  "contains": [
+    "payment"
+  ],
+  "created_at": 1724673330,
+  "payload": {
+    "payment": {
+      "entity": {
+        "id": "pay_O4sXb5hN3jKL1m",
+        "entity": "payment",
+        "amount": 249900,
+        "currency": "INR",
+        "status": "failed",
+        "order_id": "order_O4sW847r38kLpo",
+        "invoice_id": null,
+        "international": false,
+        "method": "card",
+        "amount_refunded": 0,
+        "refund_status": null,
+        "captured": false,
+        "description": "Subscription Renewal - Standard Tier",
+        "card_id": "card_O4sXb792jKlMNO",
+        "bank": "HDFC",
+        "wallet": null,
+        "vpa": null,
+        "email": "customer@example.com",
+        "contact": "+919876543210",
+        "notes": {
+          "user_id": "usr_9918",
+          "plan": "pro_monthly"
+        },
+        "fee": null,
+        "tax": null,
+        "error_code": "BAD_REQUEST_PAYMENT_TIMED_OUT",
+        "error_description": "Payment was timed out waiting for gateway response",
+        "error_source": "gateway",
+        "error_step": "payment_authorization",
+        "error_reason": "payment_gateway_error",
+        "acquirer_data": {
+          "rrn": "321098471928"
+        },
+        "created_at": 1724673330
+      }
+    }
+  }
+}
