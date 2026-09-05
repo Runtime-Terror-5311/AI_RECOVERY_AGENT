@@ -44,16 +44,4 @@ revenue-recovery-agent/
 └── Makefile                       # make run, make test, make batch, make demo-data
 ```
 
-## Ownership at a glance
 
-| Folder | Primary owner (see phased plan) |
-|---|---|
-| `internal/events`, `data/`, `cmd/datagen` | Data & Contracts track |
-| `internal/classify`, `cmd/classifier` | Classification track |
-| `internal/decide`, `internal/execute`, `cmd/decision`, `cmd/executor` | Decision & Action track |
-| `internal/audit`, `internal/metrics`, `dashboard/`, `cmd/batch-eval` | Audit, Metrics & Demo track |
-| `internal/stream`, `deploy/` | Shared — whoever's free in Phase 0, then anyone touches as needed |
-
-## Why this shape
-
-Every pipeline stage gets its own `cmd/` entrypoint and its own `internal/` package. That's deliberate: each service can be built, tested, and run **in isolation**, feeding it JSON that matches the schema doc, without the other three services existing yet. Integration (Phase 2) is just pointing real streams at each other instead of test fixtures.

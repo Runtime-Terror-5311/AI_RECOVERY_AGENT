@@ -146,7 +146,6 @@ func (e *Engine) Decide(ctx context.Context, record events.ClassificationRecord,
 	// 1. HARD DETERMINISTIC SAFETY CONSTRAINTS
 	// -------------------------------------------------------------
 
-	// Constraint 1: Merchant Circuit Breaker (Merchant-wide degradation)
 	if tCtx.MerchantFailureRate > e.MerchantBreakerThreshold {
 		rule := "merchant_circuit_breaker_tripped"
 		reason := fmt.Sprintf("Merchant rolling failure rate (%.1f%%) exceeds 40%% threshold; automated retries halted", tCtx.MerchantFailureRate*100)
